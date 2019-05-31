@@ -1,0 +1,10 @@
+stepper motors https://www.ebay.com/itm/5PCS-NEMA-17-Stepper-motor-Kit-12V-For-CNC-Reprap-3D-printer-extruder-28Ncm/323780574486
+timing belts https://www.ebay.com/itm/HTD-5M-Timing-Belt-Arc-Teeth-5mm-Pitch-10-50mm-Width-Rubber-Drive-Belt-225-365mm/292307034105?var=591205800702
+battery holder https://www.ebay.com/itm/1-2-3-4-6-8-10-x-AA-AAA-18650-Battery-Holder-Case-Enclosed-Box-Switch-With-Leads/253265256868?var=552400897049
+cnc shield https://www.ebay.com/itm/3D-Printer-CNC-Shield-V4-Engraver-Expansion-Board-Nano-v3-0-3x-A4988-Driver/362531646437
+ESP-01
+ESP programmer https://www.ebay.com/itm/USB-to-ESP8266-ESP-01-ESP-01S-Serial-Wireless-Wifi-Adapter-CH340G-Driver-Module/323748156340?var=512738723774
+USB Serial https://www.ebay.com/itm/6Pin-USB-2-0-to-TTL-UART-Module-Serial-Converter-CP2102-STC-Ersetzen-Ft232-Modul/152895017873
+compass https://www.ebay.com/itm/GY-271-HMC5883L-Digital-Compass-Module-3-Axis-Magnetic-Sensor-Module-For-Arduino/172421302792
+ball bearings https://www.ebay.com/itm/20Pcs-608zz-Deep-Groove-Ball-Bearing-Carbon-Steel-3D-Printer-Skateboard-8X22X7mm/123481050584?var=423989819744
+dupont wires 40 2.54mm 10/20/30cm M-M M-F F-F Dupont Wire Jumper Cable for Arduino Breadboard

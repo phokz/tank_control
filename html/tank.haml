@@ -1,0 +1,45 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %style= File.read('style.css')
+    %title Tank control
+    %script= File.read('control.js')
+  %body
+    #wrapper.container
+      .row
+        .m6
+          %button.d{data: {x: 1, y: 0.73}}
+            %span.icon-arrow-up-left
+          %button.d{data: {x: 1, y: 1}}
+            %span.icon-arrow-up
+          %button.d{data: {x: 0.73, y: 1}}
+            %span.icon-arrow-up-right
+      .row
+        .m6
+          %button.d{data: {x: 0.73, y: -0.73}}
+            %span.icon-arrow-left
+          %button
+            %span.icon-stop2
+          %button.d{data: {x: -0.73, y: 0.73}}
+            %span.icon-arrow-right
+      .row
+        .m6
+          %button.d{data: {x: -1, y: -0.73}}
+            %span.icon-arrow-down-left
+          %button.d{data: {x: -1, y: -1}}
+            %span.icon-arrow-down
+          %button.d{data: {x: -0.73, y: -1}}
+            %span.icon-arrow-down-right
+    .foo
+      %input#mode{:name => "mode", :size => "6", :type => "text", :value => "G91"}/
+      %br/
+      %input#unit{:name => "unit", :size => "6", :type => "text", :value => "G21"}/
+      %br/
+      %input#x{:name => "x", :size => "10", :type => "text", :value => "X-1"}/
+      %br/
+      %input#y{:name => "y", :size => "10", :type => "text", :value => "Y-1"}/
+      %br/
+      %button#go send
