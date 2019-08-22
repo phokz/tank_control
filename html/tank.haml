@@ -8,31 +8,27 @@
     %title Tank control
     %script= File.read('control.js')
   %body
-    #wrapper.container
-      .row
-        .m6
-          %button.d{data: {x: 1, y: 0.73}}
-            %span.icon-arrow-up-left
-          %button.d{data: {x: 1, y: 1}}
-            %span.icon-arrow-up
-          %button.d{data: {x: 0.73, y: 1}}
-            %span.icon-arrow-up-right
-      .row
-        .m6
-          %button.d{data: {x: 0.73, y: -0.73}}
-            %span.icon-arrow-left
-          %button
-            %span.icon-stop2
-          %button.d{data: {x: -0.73, y: 0.73}}
-            %span.icon-arrow-right
-      .row
-        .m6
-          %button.d{data: {x: -1, y: -0.73}}
-            %span.icon-arrow-down-left
-          %button.d{data: {x: -1, y: -1}}
-            %span.icon-arrow-down
-          %button.d{data: {x: -0.73, y: -1}}
-            %span.icon-arrow-down-right
+    .row.m6
+      %button.d{data: {x: 1, y: 0.73}}
+        %span.icon-arrow-up-left
+      %button.d{data: {x: 1, y: 1}}
+        %span.icon-arrow-up
+      %button.d{data: {x: 0.73, y: 1}}
+        %span.icon-arrow-up-right
+    .row.m6
+      %button.d{data: {x: 0.73, y: -0.73}}
+        %span.icon-arrow-left
+      %button#stop
+        %span.icon-stop2
+      %button.d{data: {x: -0.73, y: 0.73}}
+        %span.icon-arrow-right
+    .row.m6
+      %button.d{data: {x: -1, y: -0.73}}
+        %span.icon-arrow-down-left
+      %button.d{data: {x: -1, y: -1}}
+        %span.icon-arrow-down
+      %button.d{data: {x: -0.73, y: -1}}
+        %span.icon-arrow-down-right
     .foo
       %input#mode{:name => "mode", :size => "6", :type => "text", :value => "G91"}/
       %br/

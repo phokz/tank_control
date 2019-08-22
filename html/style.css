@@ -1,8 +1,8 @@
-html, body {    height: 100%;    margin: 0;    min-height: 100%;    padding: 0px;}
-#wrapper {    height: 100%;    width: 100%;}
-.row { height: 30%; margin-left: 30% }
-.m6 { width: 60% }
-button { width: 30%; height: calc(100vh/4); font-size: calc(100vh/10); }
+* {  box-sizing: border-box; }
+html, body {    height: 100%;    margin: 0;    min-height: 100%;    padding: 0px; white-space-collapse: discard; }
+.row { height: 30%; }
+.m6 { width: 100% }
+button { width: calc(32vw); height: calc(100vh/4); font-size: calc(100vh/10); }
 
 @font-face {
   font-family: 'icomoon';

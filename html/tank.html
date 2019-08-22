@@ -1,168 +1,163 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
-    <meta charset='utf-8'>
-    <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <style>
-      html, body {    height: 100%;    margin: 0;    min-height: 100%;    padding: 0px;}
-      #wrapper {    height: 100%;    width: 100%;}
-      .row { height: 30%; margin-left: 30% }
-      .m6 { width: 60% }
-      button { width: 30%; height: calc(100vh/4); font-size: calc(100vh/10); }
-      
-      @font-face {
-        font-family: 'icomoon';
-        src: url('data:application/x-font-ttf;base64,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') format('truetype');
-        font-weight: normal;
-        font-style: normal;
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<style>* {  box-sizing: border-box; }
+html, body {    height: 100%;    margin: 0;    min-height: 100%;    padding: 0px; white-space-collapse: discard; }
+.row { height: 30%; }
+.m6 { width: 100% }
+button { width: calc(32vw); height: calc(100vh/4); font-size: calc(100vh/10); }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('data:application/x-font-ttf;base64,AAEAAAALAIAAAwAwT1MvMg8SBzMAAAC8AAAAYGNtYXAAyL41AAABHAAAAGRnYXNwAAAAEAAAAYAAAAAIZ2x5ZqTug8AAAAGIAAACCGhlYWQSe4WbAAADkAAAADZoaGVhB8IDzwAAA8gAAAAkaG10eC4AAOAAAAPsAAAAOGxvY2EDmAMmAAAEJAAAAB5tYXhwABAAGgAABEQAAAAgbmFtZZlKCfsAAARkAAABhnBvc3QAAwAAAAAF7AAAACAAAwPRAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADqOAPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQASAAAAA4ACAACAAYAAQAg6aXqHuo4//3//wAAAAAAIOml6h7qMf/9//8AAf/jFl8V5xXVAAMAAQAAAAAAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAA/8AEAAPAABcAAAkBIwMwNz4BNzYXCQEWBw4BBwYxJTUBEwLA/sDAwCIhYzg4LP6+AaYWAwMaDg4BAAFAQAOA/sD/AAgJEAQDCv5iAUgyOjphISDAwAFAAUAAAAAAAQCAAEADgANAAAMAABMhESGAAwD9AANA/QAAAAEAAP/ABAADwAAGAAA3CQE3CQEhAAEAAiDg/eABAP0g4AEA/eDgAiABAAAAAQAg/8AD4AOgAAYAAAkBIREhESECAP4gASABgAEgA6D+IP4AAgAAAAEAAP/ABAADwAAGAAAJAhcJAREBIAEA/eDgAiABAAPA/wD94OACIP8AAuAAAQAA/+AD4AOgAAYAAAkBESERIRED4P4g/gACAAHAAeD+4P6A/uAAAAEAAP/ABAADwAAGAAAJAgcJASEEAP8A/eDgAiD/AALgAqD/AAIg4P3g/wAAAQAg/+AD4APAAAYAAAUBIREhESECAAHg/uD+gP7gIAHgAgD+AAAAAAEAAP/ABAADwAAGAAAFCQEnCQERAuD/AAIg4P3g/wBAAQACIOD94AEA/SAAAQAg/+AEAAOgAAYAABMBESERIREgAeACAP4AAcD+IAEgAYABIAAAAAEAAAAAAAAKPlALXw889QALBAAAAAAA166gjwAAAADXrqCPAAD/wAQAA8AAAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAABAAAAQAAAAAAAAAAAAAAAAAAAA4EAAAAAAAAAAAAAAACAAAABAAAAAQAAIAEAAAABAAAIAQAAAAEAAAABAAAAAQAACAEAAAABAAAIAAAAAAACgAUAB4ATgBcAHIAhgCcALAAxgDaAPABBAAAAAEAAAAOABgAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAHAAAAAQAAAAAAAgAHAGAAAQAAAAAAAwAHADYAAQAAAAAABAAHAHUAAQAAAAAABQALABUAAQAAAAAABgAHAEsAAQAAAAAACgAaAIoAAwABBAkAAQAOAAcAAwABBAkAAgAOAGcAAwABBAkAAwAOAD0AAwABBAkABAAOAHwAAwABBAkABQAWACAAAwABBAkABgAOAFIAAwABBAkACgA0AKRpY29tb29uAGkAYwBvAG0AbwBvAG5WZXJzaW9uIDEuMABWAGUAcgBzAGkAbwBuACAAMQAuADBpY29tb29uAGkAYwBvAG0AbwBvAG5pY29tb29uAGkAYwBvAG0AbwBvAG5SZWd1bGFyAFIAZQBnAHUAbABhAHJpY29tb29uAGkAYwBvAG0AbwBvAG5Gb250IGdlbmVyYXRlZCBieSBJY29Nb29uLgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rocket:before {
+  content: "\e9a5";
+}
+.icon-stop2:before {
+  content: "\ea1e";
+}
+.icon-arrow-up-left:before {
+  content: "\ea31";
+}
+.icon-arrow-up:before {
+  content: "\ea32";
+}
+.icon-arrow-up-right:before {
+  content: "\ea33";
+}
+.icon-arrow-right:before {
+  content: "\ea34";
+}
+.icon-arrow-down-right:before {
+  content: "\ea35";
+}
+.icon-arrow-down:before {
+  content: "\ea36";
+}
+.icon-arrow-down-left:before {
+  content: "\ea37";
+}
+.icon-arrow-left:before {
+  content: "\ea38";
+}
+</style>
+<title>Tank control</title>
+<script>var TANK = TANK || {};
+document.addEventListener('DOMContentLoaded', function (event) {
+  TANK.mode = document.getElementById('mode');
+  TANK.unit = document.getElementById('unit');
+  TANK.x = document.getElementById('x');
+  TANK.y = document.getElementById('y');
+  TANK.go = document.getElementById('go');
+  TANK.stop = document.getElementById('stop');
+  TANK.xhr = function (url, data) {
+    var request = new XMLHttpRequest();
+    request.open('POST', url, true);
+    request.setRequestHeader('Content-type',
+      'application/x-www-form-urlencoded');
+    request.onreadystatechange = function () {
+      if (this.readyState === 4) {
+        if (this.status >= 200 && this.status < 400) {
+          console.log(this.responseText);
+        } else {
+          console.log(this.status);
+        }
       }
-      
-      [class^="icon-"], [class*=" icon-"] {
-        /* use !important to prevent issues with browser extensions that change fonts */
-        font-family: 'icomoon' !important;
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-      
-        /* Better Font Rendering =========== */
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      
-      .icon-rocket:before {
-        content: "\e9a5";
-      }
-      .icon-stop2:before {
-        content: "\ea1e";
-      }
-      .icon-arrow-up-left:before {
-        content: "\ea31";
-      }
-      .icon-arrow-up:before {
-        content: "\ea32";
-      }
-      .icon-arrow-up-right:before {
-        content: "\ea33";
-      }
-      .icon-arrow-right:before {
-        content: "\ea34";
-      }
-      .icon-arrow-down-right:before {
-        content: "\ea35";
-      }
-      .icon-arrow-down:before {
-        content: "\ea36";
-      }
-      .icon-arrow-down-left:before {
-        content: "\ea37";
-      }
-      .icon-arrow-left:before {
-        content: "\ea38";
-      }
-    </style>
-    <title>Tank control</title>
-    <script>
-      var TANK = TANK || {};
-      document.addEventListener('DOMContentLoaded', function(event) {
-      TANK.mode = document.getElementById('mode');
-      TANK.unit = document.getElementById('unit');
-      TANK.x = document.getElementById('x');
-      TANK.y = document.getElementById('y');
-      TANK.go = document.getElementById('go');
-      TANK.xhr = function(url, data, options) {
-        options = options || {};
-        var request = new XMLHttpRequest();
-        request.open('POST', url, true);
-        request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-        request.onreadystatechange = function () {
-          if (this.readyState === 4) {
-            if (this.status >= 200 && this.status < 400) {
-              options.success && option.success(parse(this.responseText));
-            } else {
-              options.error && options.error(this.status);
-            }
-          }
-        };
-        request.send(data);
-      }
-      TANK.button = function(event) {
-        console.log(event.target);
-        var x = parseFloat(event.target.dataset['x'])
-        var y = parseFloat(event.target.dataset['y'])
-        TANK.x.value = x
-        TANK.y.value = y
-        TANK.click_go();
-      }
-      TANK.click_go = function() {
-        TANK.xhr('/set.php','mode='+TANK.mode.value+'&unit='+TANK.unit.value+'&x='+TANK.x.value+'&y='+TANK.y.value, {});
-      }
-      TANK.go.addEventListener('click', TANK.click_go);
-      var i = 0;
-      var nodes = document.querySelectorAll('.d')
-      var n = nodes.length
-      for (i=0; i<n; i++) {
-        nodes[i].addEventListener('click', TANK.button);
-      }
-      
-      });
-    </script>
-  </head>
-  <body>
-    <div class='container' id='wrapper'>
-      <div class='row'>
-        <div class='m6'>
-          <button class='d' data-x='1' data-y='0.73'>
-            <span class='icon-arrow-up-left'></span>
-          </button>
-          <button class='d' data-x='1' data-y='1'>
-            <span class='icon-arrow-up'></span>
-          </button>
-          <button class='d' data-x='0.73' data-y='1'>
-            <span class='icon-arrow-up-right'></span>
-          </button>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='m6'>
-          <button class='d' data-x='0.73' data-y='-0.73'>
-            <span class='icon-arrow-left'></span>
-          </button>
-          <button>
-            <span class='icon-stop2'></span>
-          </button>
-          <button class='d' data-x='-0.73' data-y='0.73'>
-            <span class='icon-arrow-right'></span>
-          </button>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='m6'>
-          <button class='d' data-x='-1' data-y='-0.73'>
-            <span class='icon-arrow-down-left'></span>
-          </button>
-          <button class='d' data-x='-1' data-y='-1'>
-            <span class='icon-arrow-down'></span>
-          </button>
-          <button class='d' data-x='-0.73' data-y='-1'>
-            <span class='icon-arrow-down-right'></span>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class='foo'>
-      <input id='mode' name='mode' size='6' type='text' value='G91'>
-      <br>
-      <input id='unit' name='unit' size='6' type='text' value='G21'>
-      <br>
-      <input id='x' name='x' size='10' type='text' value='X-1'>
-      <br>
-      <input id='y' name='y' size='10' type='text' value='Y-1'>
-      <br>
-      <button id='go'>send</button>
-    </div>
-  </body>
+    };
+    request.send(data);
+  };
+  TANK.button = function (event) {
+    var el = event.target;
+    if (!el.classList.contains('d')) el = el.parentNode;
+    TANK.x.value = parseFloat(el.dataset.x);
+    TANK.y.value = parseFloat(el.dataset.y);
+    TANK.click_go();
+  };
+  TANK.click_go = function () {
+    TANK.xhr('/set.php', 'mode=' + TANK.mode.value + '&unit=' +
+      TANK.unit.value + '&x=' + TANK.x.value + '&y=' + TANK.y
+      .value);
+  };
+  TANK.click_stop = function () {
+    TANK.xhr('/stop.php', 'stop=1');
+  }
+  TANK.go.addEventListener('click', TANK.click_go);
+  TANK.stop.addEventListener('click', TANK.click_stop);
+  var i = 0;
+  var nodes = document.querySelectorAll('.d');
+  var n = nodes.length;
+  for (i = 0; i < n; i++) {
+    nodes[i].addEventListener('click', TANK.button);
+  }
+});
+</script>
+</head>
+<body>
+<div class='row m6'>
+<button class='d' data-x='1' data-y='0.73'>
+<span class='icon-arrow-up-left'></span>
+</button>
+<button class='d' data-x='1' data-y='1'>
+<span class='icon-arrow-up'></span>
+</button>
+<button class='d' data-x='0.73' data-y='1'>
+<span class='icon-arrow-up-right'></span>
+</button>
+</div>
+<div class='row m6'>
+<button class='d' data-x='0.73' data-y='-0.73'>
+<span class='icon-arrow-left'></span>
+</button>
+<button id='stop'>
+<span class='icon-stop2'></span>
+</button>
+<button class='d' data-x='-0.73' data-y='0.73'>
+<span class='icon-arrow-right'></span>
+</button>
+</div>
+<div class='row m6'>
+<button class='d' data-x='-1' data-y='-0.73'>
+<span class='icon-arrow-down-left'></span>
+</button>
+<button class='d' data-x='-1' data-y='-1'>
+<span class='icon-arrow-down'></span>
+</button>
+<button class='d' data-x='-0.73' data-y='-1'>
+<span class='icon-arrow-down-right'></span>
+</button>
+</div>
+<div class='foo'>
+<input id='mode' name='mode' size='6' type='text' value='G91'>
+<br>
+<input id='unit' name='unit' size='6' type='text' value='G21'>
+<br>
+<input id='x' name='x' size='10' type='text' value='X-1'>
+<br>
+<input id='y' name='y' size='10' type='text' value='Y-1'>
+<br>
+<button id='go'>send</button>
+</div>
+</body>
 </html>
